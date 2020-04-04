@@ -1,71 +1,50 @@
-/*  Opacity
--------------------------------*/
-/* End opacity
--------------------------------*/
 /* Start global style
 -------------------------------------------*/
-body {
+body{
   font-family: 'Open Sans', sans-serif;
   line-height: 26px;
   font-size: 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 5000px;
 }
-
-.Upper {
+.Upper{
   text-transform: uppercase;
 }
-
-.lower {
+.lower{
   text-transform: lowercase;
 }
-
-.capitalize {
+.capitalize{
   text-transform: capitalize;
 }
-
-.padding-top-0 {
+.padding-top-0{
   padding: 0;
 }
-
-.padding-left-0 {
+.padding-left-0{
   padding: 0;
 }
-
-.padding-bottom-0 {
+.padding-bottom-0{
   padding: 0;
 }
-
-.padding-right-0 {
+.padding-right-0{
   padding: 0;
 }
-
-.margin-top-0 {
+.margin-top-0{
   padding: 0;
 }
-
-.margin-left-0 {
+.margin-left-0{
   padding: 0;
 }
-
-.margin-bottom-0 {
+.margin-bottom-0{
   padding: 0;
 }
-
-.margin-right-0 {
+.margin-right-0{
   padding: 0;
 }
-
-a {
+a{
   text-decoration: none;
 }
-
-a:hover {
+a:hover{
   text-decoration: none;
 }
-
 /* End global style
 -------------------------------------------*/
-
-/*# sourceMappingURL=main.css.map */
