@@ -1,0 +1,66 @@
+.preloader{
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  margin-top: 0px;
+  top: 0px;
+  z-index: 9999999;
+  &.fade{
+    opacity: 0;
+  }
+  .preloader__son{
+    width: 60px;
+    height: 60px;
+    margin: 40px auto;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .preloader__son_child{
+      width: 33.33%;
+      height: 33.33%;
+      background-color: #fff;
+      float: left;
+      animation: preloader_animated 1.3s infinite ease-in-out;
+      &.child_1{
+        animation-delay: .2s;
+      }
+      &.child_2{
+        animation-delay: .3s;
+      }
+      &.child_3{
+        animation-delay: .4s;
+      }
+      &.child_4{
+        animation-delay: .1s;
+      }
+      &.child_5{
+        animation-delay: .2s;
+      }
+      &.child_6{
+        animation-delay: .1s;
+      }
+      &.child_7{
+        animation-delay: .0s;
+      }
+      &.child_8{
+        animation-delay: .1s;
+      }
+      &.child_9{
+        animation-delay: .2s;
+      }
+    }
+  }
+}
+
+@keyframes preloader_animated {
+  0%,
+  70%,
+  100% {
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    transform: scale3D(0, 0, 1);
+  }
+}

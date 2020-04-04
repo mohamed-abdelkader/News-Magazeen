@@ -2,6 +2,111 @@
 -------------------------------*/
 /* End opacity
 -------------------------------*/
+.preloader {
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  margin-top: 0px;
+  top: 0px;
+  z-index: 9999999;
+}
+
+.preloader.fade {
+  opacity: 0;
+}
+
+.preloader .preloader__son {
+  width: 60px;
+  height: 60px;
+  margin: 40px auto;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.preloader .preloader__son .preloader__son_child {
+  width: 33.33%;
+  height: 33.33%;
+  background-color: #fff;
+  float: left;
+  -webkit-animation: preloader_animated 1.3s infinite ease-in-out;
+          animation: preloader_animated 1.3s infinite ease-in-out;
+}
+
+.preloader .preloader__son .preloader__son_child.child_1 {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.preloader .preloader__son .preloader__son_child.child_2 {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.preloader .preloader__son .preloader__son_child.child_3 {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+.preloader .preloader__son .preloader__son_child.child_4 {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+.preloader .preloader__son .preloader__son_child.child_5 {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.preloader .preloader__son .preloader__son_child.child_6 {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+.preloader .preloader__son .preloader__son_child.child_7 {
+  -webkit-animation-delay: .0s;
+          animation-delay: .0s;
+}
+
+.preloader .preloader__son .preloader__son_child.child_8 {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+.preloader .preloader__son .preloader__son_child.child_9 {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+@-webkit-keyframes preloader_animated {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  }
+}
+
+@keyframes preloader_animated {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  }
+}
+
 /* Start global style
 -------------------------------------------*/
 body {
