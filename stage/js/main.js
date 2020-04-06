@@ -4,10 +4,10 @@ $(document).ready(function () {
   /* Start preloader
   =====================================*/
 
-    const preloaderDiv = document.querySelector('.preloader');
+    const preloaderDiv = document.querySelector('.loader');
     setTimeout(function () {
       preloaderDiv.className += " fade";
-    }, 5000);
+    }, 7000);
 
   /* End preloader
   =====================================*/
