@@ -7,3 +7,6 @@
 }
 /* End opacity
 -------------------------------*/
+@mixin display($display) {
+  display: $display;
+}

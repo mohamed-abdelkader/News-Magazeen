@@ -1,0 +1,26 @@
+/* Start global rest
+----------------------------*/
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 5000px;
+}
+
+ul{
+  margin: 0;
+}
+a, a:hover{
+  text-decoration: none;
+}
+.upper{
+  text-transform: uppercase;
+}
+.lower{
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+/* End global reset
+----------------------------*/

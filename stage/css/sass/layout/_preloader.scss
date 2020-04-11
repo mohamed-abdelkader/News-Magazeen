@@ -1,3 +1,5 @@
+/* Start $preloader
+--------------------------------------*/
 .loader{
   background-color: $preloaderColor;
   height: 100vh;
@@ -72,3 +74,5 @@
     transform: scale3D(0, 0, 1);
   }
 }
+/* Start $preloader
+--------------------------------------*/
