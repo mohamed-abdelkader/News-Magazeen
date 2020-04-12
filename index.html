@@ -42,26 +42,32 @@
       <div class="header__area_bottom">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-2">
-              <div class="logo_brand"><a class="navbar-brand" href="#"><img src="dist/images/logo/logo_3.png"></a></div>
+            <div class="col-lg-3">
+              <div class="logo_brand"><a href="#"><img src="dist/images/logo/logo_3.png"></a></div>
             </div>
             <div class="col-lg-9">
               <div class="nav_links d-none d-lg-block">
                 <nav>
                   <ul class="list-unstyled">
-                    <li><a class="capitalize active" href="#">home</a></li>
-                    <li><a class="capitalize" href="#">about</a></li>
-                    <li><a class="capitalize" href="#">practice area</a></li>
-                    <li><a class="capitalize" href="#">attornys</a></li>
-                    <li><a class="capitalize" href="#">blog</a></li>
-                    <li><a class="capitalize" href="#">pages</a></li>
-                    <li><a class="capitalize" href="#">contact us</a></li>
+                    <li><a class="capitalize active" href="#">home<i class="fa fa-angle-down"></i></a>
+                      <ul class="list-unstyled dropdown">
+                        <li><a class="nav-link capitalize" href="#">home 1</a></li>
+                        <li><a class="nav-link capitalize" href="#">home 2</a></li>
+                        <li><a class="nav-link capitalize" href="#">home 3</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="capitalize" href="#">about<i class="fa fa-angle-down"></i></a></li>
+                    <li><a class="capitalize" href="#">practice area<i class="fa fa-angle-down"> </i></a></li>
+                    <li><a class="capitalize" href="#">attornys<i class="fa fa-angle-down"></i></a></li>
+                    <li><a class="capitalize" href="#">blog<i class="fa fa-angle-down"></i></a></li>
+                    <li><a class="capitalize" href="#">pages<i class="fa fa-angle-down"></i></a></li>
+                    <li><a class="capitalize" href="#">contact us<i class="fa fa-angle-down"></i></a></li>
                   </ul>
                 </nav>
               </div>
             </div>
-            <div class="col-lg-1">
-              <div class="search_box"><i class="fa fa-search"></i></div>
+            <div class="col-12">
+              <div class="mobile_menu d-block d-lg-none"></div>
             </div>
           </div>
         </div>
@@ -71,7 +77,18 @@
     <!-- Start banner-->
     <section>
       <div class="overlay"></div>
-      <div class="banner_area"></div>
+      <div class="banner_area d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="banner_area_title">
+                <h1 class="capitalize">
+                   we are fight for justice <br>as alike a <span>friend</span></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- End banner-->
     <script src="dist/js/jquery-3.4.1.min.js"></script>

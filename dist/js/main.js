@@ -9,5 +9,11 @@ $(function(){
     preloaderDiv.className += " fade";
   }, 7000);
 
-  $('#menu').slicknav();
+    $('.nav_links nav').slicknav({
+        label: '',
+        duration: 300,
+        prependTo:'.mobile_menu',
+        closedSymbol: '&#43;',
+        openedSymbol: '&#8722;'
+    });
 });

@@ -17,6 +17,21 @@ section{
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
+    .banner_area_title{
+      h1{
+        color: #fff;
+        font-size: 60px;
+        @media(min-width: 320px) and(max-width: 480px) {
+          font-size: 26px;
+        }
+        @media(min-width: 481px) and(max-width: 767px) {
+          font-size: 37px;
+        }
+        span{
+          color: #d5aa6d
+        }
+      }
+    }
   }
 
 }
