@@ -19,13 +19,21 @@
     <!-- slick nav-->
     <link rel="stylesheet" href="dist/css/slicknav.min.css">
     <!-- slick nav-->
+    <!-- Start ainmate-->
+    <link rel="stylesheet" href="dist/css/ainmate.css">
+    <!-- End ainmate-->
     <!-- Main stylesheet-->
     <link rel="stylesheet" href="dist/css/main.css">
     <!-- End main-->
   </head>
   <body>
+    <!-- Strar search box-->
+    <div class="search-box">
+      <div class="search_box_content"></div>
+    </div>
+    <!-- End search box-->
     <!-- Strart header-->
-    <header>
+    <header id="header">
       <div class="header__area_top">
         <div class="container">
           <div class="row align-items-center">
@@ -39,13 +47,13 @@
           </div>
         </div>
       </div>
-      <div class="header__area_bottom">
+      <div class="header__area_bottom" id="header_area_bottom">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="logo_brand"><a href="#"><img src="dist/images/logo/logo_3.png"></a></div>
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-md-9 col-sm-9">
               <div class="nav_links d-none d-lg-block">
                 <nav>
                   <ul class="list-unstyled">
@@ -70,33 +78,48 @@
               <div class="mobile_menu d-block d-lg-none"></div>
             </div>
           </div>
+          <div class="search_box"><i class="fa fa-search search-icon"></i></div>
         </div>
       </div>
     </header>
     <!-- End header-->
-    <!-- Start banner-->
+    <!-- Start slider-->
     <section>
-      <div class="overlay"></div>
-      <div class="banner_area d-flex align-items-center">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="banner_area_title">
-                <h1 class="capitalize">
-                   we are fight for justice <br>as alike a <span>friend</span></h1>
+      <div class="section_area owl-carousel">
+        <div class="section_area_banner d-flex align-items-center" style="background-image: url('dist/images/banner/banner-3.jpg')">
+          <div class="container">
+            <div class="section_area_content">
+              <h1 class="capitalize wow fadeInUp">
+                 we are fight justice<br>as like a <span>friend</span></h1>
+              <div class="buttons">
+                <button class="btn" type="button"><a class="capitalize" href="#">contact us</a></button>
+                <button class="btn" type="button"><a class="capitalize" href="#">free consultation</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section_area_banner d-flex align-items-center" style="background-image: url('dist/images/banner/banner-2.jpg')">
+          <div class="container">
+            <div class="section_area_content">
+              <h1 class="capitalize wow fadeInUp">
+                 we are fight justice<br>as like a <span>friend</span></h1>
+              <div class="buttons">
+                <button class="btn" type="button"><a class="capitalize" href="#">contact us</a></button>
+                <button class="btn" type="button"><a class="capitalize" href="#">free consultation</a></button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End banner-->
+    <!-- End slider-->
     <script src="dist/js/jquery-3.4.1.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/popper.min.js"></script>
     <script src="dist/js/jquery.slicknav.min.js"></script>
     <script src="dist/js/jquery.nicescroll.min.js"></script>
     <script src="dist/js/owl.carousel.min.js"></script>
-    <script src="dist/js/popper.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/wow.min.js"></script>
     <script src="dist/js/main.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
   </body>

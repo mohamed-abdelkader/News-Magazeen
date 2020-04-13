@@ -1,5 +1,5 @@
 // Strart header
-header
+header#header
   .header__area_top
     .container
       .row.align-items-center
@@ -13,14 +13,14 @@ header
               span.lower mohamed@gmail.com
             li: a(href='#', class='capitalize last')
               | free consultation
-  .header__area_bottom
+  .header__area_bottom#header_area_bottom
     .container
       .row.align-items-center
-        .col-lg-3
+        .col-lg-3.col-md-3.col-sm-3
           .logo_brand
             a(href='#')
               img(src='dist/images/logo/logo_3.png')
-        .col-lg-9
+        .col-lg-9.col-md-9.col-sm-9
           .nav_links.d-none.d-lg-block
             nav
               ul.list-unstyled
@@ -51,4 +51,6 @@ header
                     i.fa.fa-angle-down
         .col-12
           .mobile_menu.d-block.d-lg-none
+      .search_box
+        i.fa.fa-search.search-icon
 // End header

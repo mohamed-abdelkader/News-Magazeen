@@ -20,10 +20,10 @@ header{
           border: none;
         }
         a{
-          color: #252525;
+          color: $secondColor;
           // font-size: 14px;
           &.last{
-            color: #d5aa6d;
+            color: $premiaryColor;
           }
           span{
             color: #bfbfbf;
@@ -39,6 +39,17 @@ header{
     }
   }
   .header__area_bottom{
+    &.fixed{
+      position: fixed;
+      width: 100%;
+      top: -70px;
+      left: 0;
+      z-index: 100;
+      background: #fff;
+      transform: translateY(70px);
+      transition: all .5s;
+      box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+    }
     @media(min-width: 320px) {
       padding: 10px 0;
     }
@@ -51,7 +62,8 @@ header{
       }
     }
     .nav_links{
-      text-align: right;
+      margin-left: auto;
+      margin-right: auto;
       nav{
         ul{
           li{
@@ -67,7 +79,7 @@ header{
               transform: translateY(0);
             }
             a{
-              color: #252525;
+              color: $secondColor;
               font-size: 16px;
               font-weight: 500;
               letter-spacing: 1px;
@@ -76,21 +88,21 @@ header{
               position: relative;
               transition: all .5s;
               &:hover{
-                color: #d5aa6d;
+                color: $premiaryColor;
                 @extend .active;
               }
               &.active{
-                color: #d5aa6d;
+                color: $premiaryColor;
               }
               &.active::after{
-                color: #d5aa6d;
+                color: $premiaryColor;
                 content: '';
                 position: absolute;
                 bottom: 27px;
                 left: 0;
                 height: 1px;
                 width: 20px;
-                background-color: #d5aa6d;
+                background-color: $premiaryColor;
               }
               i{
                 margin-left: 5px;
@@ -113,7 +125,7 @@ header{
                 top: -13px;
                 left: 6px;
                 height: 1px;
-                background-color: #d5aa6d;
+                background-color: $premiaryColor;
                 width: 30px;
                 transform: rotate(90deg);
               }
@@ -196,6 +208,23 @@ header{
           height: 3px;
           margin-bottom: 5px;
         }
+      }
+    }
+    .search_box{
+      position: absolute;
+      top: 0;
+      right: 0;
+      i{
+        cursor: pointer;
+        color: $secondColor;
+      }
+      @media(min-width: 320px) {
+        top: 21px;
+        right: 50px;
+      }
+      @media(min-width: 992px) {
+        top: 29px;
+        right: 0;
       }
     }
   }

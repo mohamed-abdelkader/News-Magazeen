@@ -1,0 +1,10 @@
+.btn{
+  background-color: $premiaryColor;
+  width: 150px;
+  &:last-of-type{
+    margin-left: 10px;
+  }
+  a{
+    color: #fff;
+  }
+}

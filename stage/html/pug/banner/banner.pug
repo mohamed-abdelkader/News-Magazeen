@@ -1,14 +1,27 @@
-// Start banner
+// Start slider
 section
-  .overlay
-  .banner_area.d-flex.align-items-center
-    .container
-      .row
-        .col
-          .banner_area_title
-            h1.capitalize 
-              | we are fight for justice 
-              br
-              | as alike a 
-              span friend
-// End banner
+  .section_area.owl-carousel
+    .section_area_banner(class='d-flex align-items-center',style="background-image: url('dist/images/banner/banner-3.jpg')")
+      .container
+        .section_area_content
+          h1.capitalize.wow.fadeInUp 
+           | we are fight justice
+           br
+           | as like a 
+           span friend
+          .buttons
+            button(type='button', class='btn'): a(href='#', class='capitalize') contact us
+            button(type='button', class='btn'): a(href='#', class='capitalize') free consultation
+    .section_area_banner(class='d-flex align-items-center',style="background-image: url('dist/images/banner/banner-2.jpg')")
+      .container
+        .section_area_content
+          h1.capitalize.wow.fadeInUp 
+           | we are fight justice
+           br
+           | as like a 
+           span friend
+          .buttons
+            button(type='button', class='btn'): a(href='#', class='capitalize') contact us
+            button(type='button', class='btn'): a(href='#', class='capitalize') free consultation
+
+// End slider

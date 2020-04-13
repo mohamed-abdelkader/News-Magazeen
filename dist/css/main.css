@@ -46,7 +46,7 @@
 .loader .loader__head .dots span {
   height: 20px;
   width: 20px;
-  border: 1px solid #b69d74;
+  border: 1px solid #d5aa6d;
   border-radius: 50%;
   margin-right: 5px;
   display: inline-block;
@@ -64,7 +64,7 @@
 .loader .loader__head .dots span > span {
   width: 12px;
   height: 12px;
-  background-color: #b69d74;
+  background-color: #d5aa6d;
   border-radius: 50%;
   margin: 0;
   -webkit-animation: preloader 1.3s infinite ease-in-out;
@@ -124,6 +124,34 @@
 
 /* Start $preloader
 --------------------------------------*/
+.search-box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  z-index: 200;
+}
+
+.search-box .search_box_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.94);
+  z-index: 3;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.search-box.open_overlay {
+  opacity: .9;
+  visibility: visible;
+}
+
 /* Start global rest
 ----------------------------*/
 body {
@@ -132,6 +160,10 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 5000px;
+}
+
+.container {
+  position: relative;
 }
 
 ul {
@@ -156,6 +188,19 @@ a, a:hover {
 
 /* End global reset
 ----------------------------*/
+.btn {
+  background-color: #d5aa6d;
+  width: 150px;
+}
+
+.btn:last-of-type {
+  margin-left: 10px;
+}
+
+.btn a {
+  color: #fff;
+}
+
 header .header__area_top {
   text-align: right;
   padding: 10px 0 20px 0;
@@ -204,6 +249,21 @@ header .header__area_top ul li a span {
   }
 }
 
+header .header__area_bottom.fixed {
+  position: fixed;
+  width: 100%;
+  top: -70px;
+  left: 0;
+  z-index: 100;
+  background: #fff;
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
 @media (min-width: 320px) {
   header .header__area_bottom {
     padding: 10px 0;
@@ -219,7 +279,8 @@ header .header__area_bottom .logo_brand a.navbar-brand img {
 }
 
 header .header__area_bottom .nav_links {
-  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header .header__area_bottom .nav_links nav ul li {
@@ -391,49 +452,148 @@ header .header__area_bottom .mobile_menu .slicknav_menu .slicknav_icon-bar {
   margin-bottom: 5px;
 }
 
-section {
-  position: relative;
+header .header__area_bottom .search_box {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+header .header__area_bottom .search_box i {
+  cursor: pointer;
+  color: #252525;
+}
+
+@media (min-width: 320px) {
+  header .header__area_bottom .search_box {
+    top: 21px;
+    right: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  header .header__area_bottom .search_box {
+    top: 29px;
+    right: 0;
+  }
 }
 
 section .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #252525;
-  opacity: .8;
+  background: #000;
+  z-index: 2;
+  opacity: .5;
 }
 
-section .banner_area {
-  background-image: url("../../dist/images/banner/banner-3.jpg");
+section .section_area .section_area_banner {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
   height: 100vh;
+  background-position: center center;
 }
 
-section .banner_area .banner_area_title h1 {
+section .section_area .section_area_banner .section_area_content h1 {
   color: #fff;
-  font-size: 60px;
+  font-size: 70px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  section .banner_area .banner_area_title h1 {
-    font-size: 26px;
+section .section_area .section_area_banner .section_area_content h1 span {
+  color: #d5aa6d;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  section .section_area .section_area_banner .section_area_content h1 {
+    font-size: 50px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  section .banner_area .banner_area_title h1 {
-    font-size: 37px;
+  section .section_area .section_area_banner .section_area_content h1 {
+    font-size: 40px;
   }
 }
 
-section .banner_area .banner_area_title h1 span {
-  color: #d5aa6d;
+@media (min-width: 320px) and (max-width: 480px) {
+  section .section_area .section_area_banner .section_area_content h1 {
+    font-size: 31px;
+  }
+}
+
+@media (min-width: 320px) {
+  section .section_area .section_area_banner .section_area_content .buttons {
+    margin-top: 190px;
+  }
+}
+
+@media (min-width: 481px) {
+  section .section_area .section_area_banner .section_area_content .buttons {
+    margin-top: 100px;
+  }
+}
+
+section .section_area .section_area_banner .section_area_content .buttons button {
+  margin-top: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  section .section_area .section_area_banner .section_area_content .buttons button {
+    margin: 0;
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+
+section .section_area .owl-nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+section .section_area .owl-nav button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #d5aa6d !important;
+  position: absolute;
+  outline: none;
+}
+
+section .section_area .owl-nav button.owl-prev {
+  left: 2%;
+}
+
+section .section_area .owl-nav button.owl-next {
+  right: 2%;
+}
+
+section .section_area .owl-nav button i {
+  color: #fff;
+}
+
+section .section_area .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+section .section_area .owl-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #d5aa6d;
+  margin: 0px 5px;
+  display: inline-block;
+  outline: none;
+}
+
+section .section_area .owl-dots button.active {
+  background-color: #fff;
+  border: 1px solid #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
