@@ -6,8 +6,9 @@ $(function(){
   // console.log(preloader);
   const preloaderDiv = document.querySelector('.loader');
   setTimeout(function () {
-    preloaderDiv.className += " fade";
-  }, 7000);
+    preloaderDiv.className += " faade";
+  }, 1000);
+
 
   /* Start search box overlay
   -------------------------------------*/
