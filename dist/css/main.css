@@ -6,8 +6,12 @@
 --------------------------------------*/
 .loader {
   background-color: #242323;
-  height: 100vh;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000;
 }
 
 .loader.fade {
@@ -489,8 +493,8 @@ section .overlay {
 section .section_area .section_area_banner {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   background-position: center center;
+  height: calc(100vh - 155px);
 }
 
 section .section_area .section_area_banner .section_area_content h1 {
