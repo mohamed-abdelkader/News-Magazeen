@@ -7,7 +7,7 @@ $(function(){
   const preloaderDiv = document.querySelector('.loader');
   setTimeout(function () {
     preloaderDiv.className += " faade";
-  }, 1000);
+  }, 4000);
 
 
   /* Start search box overlay
