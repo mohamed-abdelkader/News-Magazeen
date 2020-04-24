@@ -1,56 +1,18 @@
-// Strart header
-header#header
-  .header__area_top
-    .container
-      .row.align-items-center
-        .col-lg-12
+header.header_area
+  .container
+    .row.align-items-center
+      .col-lg-3
+        .header_area_logo
+          a(href='#' class='brand')
+            img(src='dist/images/banner/law.png')
+      .col-lg-9
+        .header_area_nav
           ul.list-unstyled
-            li: a(href='#', class='capitalize')
-              | phone: 
-              span +2 01002863209
-            li: a(href='#', class='capitalize')
-              | email: 
-              span.lower mohamed@gmail.com
-            li: a(href='#', class='capitalize last')
-              | free consultation
-  .header__area_bottom#header_area_bottom
-    .container
-      .row.align-items-center
-        .col-lg-3.col-md-3.col-sm-3
-          .logo_brand
-            a(href='#')
-              img(src='dist/images/logo/logo_3.png')
-        .col-lg-9.col-md-9.col-sm-9
-          .nav_links.d-none.d-lg-block
-            nav
-              ul.list-unstyled
-                li
-                  a(href='#', class='capitalize active') home
-                    i.fa.fa-angle-down
-                  ul.list-unstyled.dropdown
-                    li: a(href='#', class='nav-link capitalize') home 1
-                    li: a(href='#', class='nav-link capitalize') home 2
-                    li: a(href='#', class='nav-link capitalize') home 3
-                li
-                  a(href='#', class='capitalize') about
-                    i.fa.fa-angle-down
-                li
-                  a(href='#', class='capitalize') practice area
-                    i.fa.fa-angle-down 
-                li
-                  a(href='#', class='capitalize') attornys
-                    i.fa.fa-angle-down
-                li
-                  a(href='#', class='capitalize') blog
-                    i.fa.fa-angle-down
-                li
-                  a(href='#', class='capitalize') pages
-                    i.fa.fa-angle-down
-                li
-                  a(href='#', class='capitalize') contact us
-                    i.fa.fa-angle-down
-        .col-12
-          .mobile_menu.d-block.d-lg-none
-      .search_box
-        i.fa.fa-search.search-icon
-// End header
+            li: a(href='#', class='capitalize active') home
+            li: a(href='#', class='capitalize') about
+            li: a(href='#', class='capitalize') practice area
+            li: a(href='#', class='capitalize') blog
+            li: a(href='#', class='capitalize') clients
+            li: a(href='#', class='capitalize') resent case
+            li: a(href='#', class='capitalize') git appointment
+            li: a(href='#', class='capitalize') contact

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- End meta tage-->
     <title>News & Magazeen</title>
+    <link rel="stylesheet" href="https://fonts,googleapis.com/css2?family=Open+Sana:wght@300&amp;display=swap">
     <!-- Font awesome libarary-->
     <link rel="stylesheet" href="dist/css/font-awesome.min.css">
     <!-- Font awesome-->
@@ -27,99 +28,57 @@
     <!-- End main-->
   </head>
   <body>
-    <!-- Start preloader-->
-    <div class="loader">
-      <div class="loader__head"><img src="dist/images/preloader/preloader.png">
-        <div class="dots"><span><span class="dot_1"></span></span><span><span class="dot_2"></span></span><span><span class="dot_3"></span></span><span><span class="dot_4"></span></span><span><span class="dot_5"></span></span></div>
-      </div>
-    </div>
-    <!-- End preloader-->
-    <!-- Strar search box-->
-    <div class="search-box">
-      <div class="search_box_content"></div>
-    </div>
-    <!-- End search box-->
-    <!-- Strart header-->
-    <header id="header">
-      <div class="header__area_top">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-12">
+    <!--include pug/layout/preloader-->
+    <header class="header_area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <div class="header_area_logo"><a class="brand" href="#"><img src="dist/images/banner/law.png"></a></div>
+          </div>
+          <div class="col-lg-9">
+            <div class="header_area_nav">
               <ul class="list-unstyled">
-                <li><a class="capitalize" href="#">phone: <span>+2 01002863209</span></a></li>
-                <li><a class="capitalize" href="#">email: <span class="lower">mohamed@gmail.com</span></a></li>
-                <li><a class="capitalize last" href="#">free consultation</a></li>
+                <li><a class="capitalize active" href="#">home</a></li>
+                <li><a class="capitalize" href="#">about</a></li>
+                <li><a class="capitalize" href="#">practice area</a></li>
+                <li><a class="capitalize" href="#">blog</a></li>
+                <li><a class="capitalize" href="#">clients</a></li>
+                <li><a class="capitalize" href="#">resent case</a></li>
+                <li><a class="capitalize" href="#">git appointment</a></li>
+                <li><a class="capitalize" href="#">contact</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="header__area_bottom" id="header_area_bottom">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="logo_brand"><a href="#"><img src="dist/images/logo/logo_3.png"></a></div>
-            </div>
-            <div class="col-lg-9 col-md-9 col-sm-9">
-              <div class="nav_links d-none d-lg-block">
-                <nav>
-                  <ul class="list-unstyled">
-                    <li><a class="capitalize active" href="#">home<i class="fa fa-angle-down"></i></a>
-                      <ul class="list-unstyled dropdown">
-                        <li><a class="nav-link capitalize" href="#">home 1</a></li>
-                        <li><a class="nav-link capitalize" href="#">home 2</a></li>
-                        <li><a class="nav-link capitalize" href="#">home 3</a></li>
-                      </ul>
-                    </li>
-                    <li><a class="capitalize" href="#">about<i class="fa fa-angle-down"></i></a></li>
-                    <li><a class="capitalize" href="#">practice area<i class="fa fa-angle-down"> </i></a></li>
-                    <li><a class="capitalize" href="#">attornys<i class="fa fa-angle-down"></i></a></li>
-                    <li><a class="capitalize" href="#">blog<i class="fa fa-angle-down"></i></a></li>
-                    <li><a class="capitalize" href="#">pages<i class="fa fa-angle-down"></i></a></li>
-                    <li><a class="capitalize" href="#">contact us<i class="fa fa-angle-down"></i></a></li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="mobile_menu d-block d-lg-none"></div>
-            </div>
-          </div>
-          <div class="search_box"><i class="fa fa-search search-icon"></i></div>
-        </div>
-      </div>
     </header>
-    <!-- End header-->
-    <!-- Start slider-->
-    <section>
-      <div class="section_area owl-carousel">
-        <div class="section_area_banner d-flex align-items-center" style="background-image: url('dist/images/banner/banner-3.jpg')">
+    <section class="banner">
+      <div class="banner_slider owl-carousel">
+        <div class="banner_slider_img d-flex align-items-center" style="background-image: url(dist/images/banner/banner-4.jpg)">
+          <div class="overlay"></div>
           <div class="container">
-            <div class="section_area_content">
-              <h1 class="capitalize wow fadeInUp">
-                 we are fight justice<br>as like a <span>friend</span></h1>
-              <div class="buttons">
-                <button class="btn" type="button"><a class="capitalize" href="#">contact us</a></button>
-                <button class="btn" type="button"><a class="capitalize" href="#">free consultation</a></button>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="banner_slider_title">
+                  <h1 class="capitalize">we are fight for you as like a <span>firend</span></h1>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="section_area_banner d-flex align-items-center" style="background-image: url('dist/images/banner/banner-2.jpg')">
-          <div class="container">
-            <div class="section_area_content">
-              <h1 class="capitalize wow fadeInUp">
-                 we are fight justice<br>as like a <span>friend</span></h1>
-              <div class="buttons">
-                <button class="btn" type="button"><a class="capitalize" href="#">contact us</a></button>
-                <button class="btn" type="button"><a class="capitalize" href="#">free consultation</a></button>
+              <div class="col-lg-6">
+                <div class="banner_slider_contact">
+                  <form>
+                    <input type="text" placeholder="Name">
+                    <input class="m-l" type="text" placeholder="Email">
+                    <input type="text" placeholder="Phone">
+                    <input class="m-l" type="text" placeholder="city">
+                    <button class="btn capitalize">free consultation </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End slider-->
     <script src="dist/js/jquery-3.4.1.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="dist/js/popper.min.js"></script>

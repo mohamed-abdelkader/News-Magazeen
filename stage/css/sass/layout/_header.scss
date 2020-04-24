@@ -1,230 +1,50 @@
-header{
-  .header__area_top{
+.header_area{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  padding: 30px 0 10px 0;
+  border-bottom: 1px solid #eeeeee29;
+  .header_area_logo{
+    width: 50px;
+    a{
+      display: inline-block;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .header_area_nav{
     text-align: right;
-    padding: 10px 0 20px 0;
-    border-bottom: 1px solid #f1f1f1;
-    @media(min-width: 320px) and (max-width: 767px) {
-      text-align: center;
+    &.second{
+      text-align: right;
     }
     ul{
       li{
         display: inline-block;
         padding: 0 10px;
-        border-right: 1px solid #ddd;
+        line-height: 70px;
         font-size: 14px;
-        &:first-of-type{
-          padding-left: 0;
-        }
-        &:last-of-type{
-          padding-right: 0;
-          border: none;
-        }
+        letter-spacing: 2px;
         a{
-          color: $secondColor;
-          // font-size: 14px;
-          &.last{
-            color: $premiaryColor;
-          }
-          span{
-            color: #bfbfbf;
-            // font-size: 13px;
-          }
-        }
-        @media(min-width: 320px) and (max-width: 767px) {
-          border: none;
-          line-height: 26px;
-          display: block;
-        }
-      }
-    }
-  }
-  .header__area_bottom{
-    &.fixed{
-      position: fixed;
-      width: 100%;
-      top: -70px;
-      left: 0;
-      z-index: 100;
-      background: #fff;
-      transform: translateY(70px);
-      transition: all .5s;
-      box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
-    }
-    @media(min-width: 320px) {
-      padding: 10px 0;
-    }
-    .logo_brand{
-      a.navbar-brand{
-        width: 100%;
-        img{
-          width: 100%;
-        }
-      }
-    }
-    .nav_links{
-      margin-left: auto;
-      margin-right: auto;
-      nav{
-        ul{
-          li{
-            display: inline-block;
-            padding: 0 10px;
-            position: relative;
-            @media(min-width: 992px) {
-              padding: 0 7px;
-            }
-            &:hover ul.dropdown{
-              opacity: 1;
-              visibility: visible;
-              transform: translateY(0);
-            }
-            a{
-              color: $secondColor;
-              font-size: 16px;
-              font-weight: 500;
-              letter-spacing: 1px;
-              display: inline-block;
-              line-height: 80px;
-              position: relative;
-              transition: all .5s;
-              &:hover{
-                color: $premiaryColor;
-                @extend .active;
-              }
-              &.active{
-                color: $premiaryColor;
-              }
-              &.active::after{
-                color: $premiaryColor;
-                content: '';
-                position: absolute;
-                bottom: 27px;
-                left: 0;
-                height: 1px;
-                width: 20px;
-                background-color: $premiaryColor;
-              }
-              i{
-                margin-left: 5px;
-                // display: none;
-              }
-            }
-            > ul.dropdown{
-              position: absolute;
-              width: 200px;
-              text-align: left;
-              z-index: 100;
-              background: #fff;
-              opacity: 0;
-              visibility: hidden;
-              transition: all .5s;
-              transform: translateY(28px);
-              &::before{
-                content: '';
-                position: absolute;
-                top: -13px;
-                left: 6px;
-                height: 1px;
-                background-color: $premiaryColor;
-                width: 30px;
-                transform: rotate(90deg);
-              }
-              > li{
-                display: block;
-                width: 100%;
-                padding: 10px 0;
-                border-bottom: 1px solid #f1f1f1;
-                > a{
-                  line-height: 0;
-                  width: 100%;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    .mobile_menu{
-      position: absolute;
-      width: 100%;
-      z-index: 9;
-      right: 0;
-      .slicknav_menu{
-        margin: 0;
-        padding: 0;
-        background: transparent;
-        .slicknav_btn{
-          background-color: transparent;
-          cursor: pointer;
-          margin-bottom: 10px;
+          color: #fff;
+          display: inline-block;
+          line-height: 70px;
           position: relative;
-          z-index: 99;
-          border: none;
-          border-radius: 3px;
-          top: 5px;
-          padding: 5px;
-          right: 10px;
-          margin-top: -5px;
-          top: -37px
-        }
-        .slicknav_nav{
-          background: #fff;
-          float: right;
-          width: 95%;
-          padding: 0;
-          border-radius: 0px;
-          margin-top: 5px;
-          position: absolute;
-          left: 0;
-          right: 0;
-          margin: auto;
-          top: 0;
-           > ul{
-            margin: 0;
-            li{
-              border-bottom: 1px solid #f1f1f1;
-              &:last-of-type{
-                border: none;
-              }
-              a{
-                color: #252525;
-                background: transparent;
-              }
+          transition: all .5s;
+          &.active, &:hover{
+            color: #fe543d;
+            &::after{
+              content: '';
+              border: 1px solid #fe543d;
+              position: absolute;
+              left: 0;
+              bottom: -11px;
+              width: 100%;
             }
           }
-          .slicknav_arrow{
-            float: right;
-            font-size: 17px;
-            font-weight: bold;
-            position: relative;
-            top: -7px;
-          }
-          i{
-            display: none;
-          }
         }
-        .slicknav_icon-bar{
-          width: 30px;
-          height: 3px;
-          margin-bottom: 5px;
-        }
-      }
-    }
-    .search_box{
-      position: absolute;
-      top: 0;
-      right: 0;
-      i{
-        cursor: pointer;
-        color: $secondColor;
-      }
-      @media(min-width: 320px) {
-        top: 21px;
-        right: 50px;
-      }
-      @media(min-width: 992px) {
-        top: 29px;
-        right: 0;
       }
     }
   }

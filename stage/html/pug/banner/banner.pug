@@ -1,28 +1,19 @@
-// Start slider
-section
-  //- .overlay
-  .section_area.owl-carousel
-    .section_area_banner(class='d-flex align-items-center',style="background-image: url('dist/images/banner/banner-3.jpg')")
+section.banner
+  .banner_slider.owl-carousel
+    .banner_slider_img.d-flex.align-items-center(style='background-image: url(dist/images/banner/banner-4.jpg)')
+      .overlay
       .container
-        .section_area_content
-          h1.capitalize.wow.fadeInUp 
-           | we are fight justice
-           br
-           | as like a 
-           span friend
-          .buttons
-            button(type='button', class='btn'): a(href='#', class='capitalize') contact us
-            button(type='button', class='btn'): a(href='#', class='capitalize') free consultation
-    .section_area_banner(class='d-flex align-items-center',style="background-image: url('dist/images/banner/banner-2.jpg')")
-      .container
-        .section_area_content
-          h1.capitalize.wow.fadeInUp 
-           | we are fight justice
-           br
-           | as like a 
-           span friend
-          .buttons
-            button(type='button', class='btn'): a(href='#', class='capitalize') contact us
-            button(type='button', class='btn'): a(href='#', class='capitalize') free consultation
-
-// End slider
+        .row
+          .col-lg-6
+            .banner_slider_title
+              h1.capitalize we are fight for you as like a 
+                span firend
+          .col-lg-6
+            .banner_slider_contact
+              form
+                input(type='text', placeholder='Name')
+                input(type='text', placeholder='Email', class='m-l')
+                input(type='text', placeholder='Phone')
+                input(type='text', placeholder='city', class='m-l')
+                button(class='btn capitalize') free consultation 
+                
